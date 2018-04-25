@@ -15,3 +15,11 @@ mixin post()
             a.prev(href=url_for(prev))!= __('prev_post')
         if next
             a.next(href=url_for(next))!= __('next_post')
+
+mixin busuanziTotal()
+    p.bsz.
+        <span id="busuanzi_container_site_pv" style='display:none'>pv:<span id="busuanzi_value_site_pv"></span> uv:<span id="busuanzi_value_site_uv"></span></span>
+
+mixin busuanziPage()
+    p.bsz.
+        <span id="busuanzi_container_site_pv" style='display:none'>Hits:<span id="busuanzi_value_page_pv"></span></span>
